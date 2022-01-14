@@ -38,19 +38,28 @@ public class FillFormAndSendMailTest extends CommonConditions {
         new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#input_529")));
         //Setup Email
         YOPmailHomePage yopMailHomePage = new YOPmailHomePage(driver);
-        String generatedMail = yopMailHomePage.openPage().OpenGenerator().getEmail();
+        String generatedMail = yopMailHomePage.openPage()
+                .OpenGenerator()
+                .getEmail();
         logger.info("Created mail with name: " + generatedMail);
 
         //Set Email to pricing
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(0));
-        Double sumFromPricing = pricingPage.moveToFrameTwo().inputEmailInEstimate(generatedMail).sendMail().makeCalculation();
+        Double sumFromPricing = pricingPage.moveToFrameTwo()
+                .inputEmailInEstimate(generatedMail)
+                .sendMail()
+                .makeCalculation();
 
         //Checking incoming mail
         driver.switchTo().window(tabs.get(tabs.size()-1));
         YOPmailGeneratorPage generatorPage = new YOPmailGeneratorPage(driver);
-        Double sumFromMail = generatorPage.checkMail().refreshMails().moveToMailFrame().getPriceFromMail();
-        assert sumFromMail.equals(sumFromPricing);
+        Double sumFromMail = generatorPage.checkMail()
+                .refreshMails()
+                .moveToMailFrame()
+                .getPriceFromMail();
+
+        Assert.assertEquals(sumFromMail, sumFromPricing);
     }
 
 }

@@ -177,67 +177,6 @@ public class GoogleCloudPricingPage {
         return this;
     }
 
-    public GoogleCloudPricingPage setInstances(String text){
-        instances.sendKeys(text);
-        return this;
-    }
-
-    public GoogleCloudPricingPage setSeries(By option){
-        series.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(option));
-        driver.findElement(option).click();
-        return this;
-    }
-
-    public GoogleCloudPricingPage setMachineType(By option){
-        machineType.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(option));
-        driver.findElement(option).click();
-        return this;
-    }
-
-    public GoogleCloudPricingPage SetGpu(){
-        gpuCheckbox.click();
-        return this;
-    }
-
-    public GoogleCloudPricingPage SetGpuType(By option){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(gpuType));
-        gpuType.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(option));
-        driver.findElement(option).click();
-        return this;
-    }
-
-    public GoogleCloudPricingPage SetGpuNumber(By option){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(gpuNumber));
-        gpuNumber.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(option));
-        driver.findElement(option).click();
-        return this;
-    }
-
-    public GoogleCloudPricingPage SetLocalSSD (By option){
-        localSSD.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(option));
-        driver.findElement(option).click();
-        return this;
-    }
-
-    public GoogleCloudPricingPage SetDataCenter(By option){
-        dataCenter.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(option));
-        driver.findElement(option).click();
-        return this;
-    }
-
-    public GoogleCloudPricingPage SetCommittedUsage(By option){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(committedUsage));
-        committedUsage.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(option));
-        driver.findElement(option).click();
-        return this;
-    }
     public GoogleCloudPricingPage AddToEstimate(){
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(estimate));
         estimate.click();

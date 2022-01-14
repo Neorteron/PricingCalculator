@@ -12,5 +12,5 @@ public class App
     }
 }
 
-//mvn -Dbrowser=chrome -Denvironment=dev -DsuiteXmlFile=src\main\Resources\"test-smoke.xml" clean test
-
+//mvn -Dbrowser=chrome -Denvironment=dev -DsuiteXmlFile=src\main\Resources\test-smoke.xml clean test
+//mvn -Dbrowser=chrome -Denvironment=dev clean test
