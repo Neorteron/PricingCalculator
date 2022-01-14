@@ -1,0 +1,737 @@
+2022-01-10 16:30:07,503 DEBUG logging.InternalLoggerFactory [main] %1 Using Log4J2 as the default logging framework
+2022-01-10 16:30:07,511 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.level: simple
+2022-01-10 16:30:07,511 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.targetRecords: 4
+2022-01-10 16:30:07,515 DEBUG util.ResourceLeakDetectorFactory [main] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4b3ed2f0
+2022-01-10 16:30:07,530 DEBUG internal.PlatformDependent0 [main] %1 -Dio.netty.noUnsafe: false
+2022-01-10 16:30:07,530 DEBUG internal.PlatformDependent0 [main] %1 Java version: 8
+2022-01-10 16:30:07,531 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.theUnsafe: available
+2022-01-10 16:30:07,532 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.copyMemory: available
+2022-01-10 16:30:07,532 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Buffer.address: available
+2022-01-10 16:30:07,533 DEBUG internal.PlatformDependent0 [main] %1 direct buffer constructor: available
+2022-01-10 16:30:07,533 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Bits.unaligned: available, true
+2022-01-10 16:30:07,533 DEBUG internal.PlatformDependent0 [main] %1 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-01-10 16:30:07,533 DEBUG internal.PlatformDependent0 [main] %1 java.nio.DirectByteBuffer.<init>(long, int): available
+2022-01-10 16:30:07,534 DEBUG internal.PlatformDependent [main] %1 sun.misc.Unsafe: available
+2022-01-10 16:30:07,534 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.tmpdir: C:\Users\Neort\AppData\Local\Temp (java.io.tmpdir)
+2022-01-10 16:30:07,534 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-01-10 16:30:07,535 DEBUG internal.PlatformDependent [main] %1 Platform: Windows
+2022-01-10 16:30:07,535 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.maxDirectMemory: 3806855168 bytes
+2022-01-10 16:30:07,535 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-01-10 16:30:07,536 DEBUG internal.CleanerJava6 [main] %1 java.nio.ByteBuffer.cleaner(): available
+2022-01-10 16:30:07,536 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.noPreferDirect: false
+2022-01-10 16:30:07,554 DEBUG internal.PlatformDependent [main] %1 org.jctools-core.MpscChunkedArrayQueue: available
+2022-01-10 16:30:07,600 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-01-10 16:30:07,601 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-01-10 16:30:07,625 DEBUG ssl.JdkSslContext [main] %1 Default protocols (JDK): [TLSv1.2] 
+2022-01-10 16:30:07,625 DEBUG ssl.JdkSslContext [main] %1 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-01-10 16:30:07,650 DEBUG channel.MultithreadEventLoopGroup [main] %1 -Dio.netty.eventLoopThreads: 32
+2022-01-10 16:30:07,659 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.noKeySetOptimization: false
+2022-01-10 16:30:07,659 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-01-10 16:30:07,668 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@54d18072
+2022-01-10 16:30:07,670 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@424fd310
+2022-01-10 16:30:07,670 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1a45193b
+2022-01-10 16:30:07,671 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@38f116f6
+2022-01-10 16:30:07,671 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5286c33a
+2022-01-10 16:30:07,672 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e6d5d29
+2022-01-10 16:30:07,673 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5c530d1e
+2022-01-10 16:30:07,673 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6c25e6c4
+2022-01-10 16:30:07,674 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@85e6769
+2022-01-10 16:30:07,674 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@c5ee75e
+2022-01-10 16:30:07,675 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@48a12036
+2022-01-10 16:30:07,675 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@bf1ec20
+2022-01-10 16:30:07,676 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@70efb718
+2022-01-10 16:30:07,677 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@b70da4c
+2022-01-10 16:30:07,677 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a11eb84
+2022-01-10 16:30:07,678 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4e858e0a
+2022-01-10 16:30:07,679 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@435fb7b5
+2022-01-10 16:30:07,679 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4e70a728
+2022-01-10 16:30:07,680 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@b7838a9
+2022-01-10 16:30:07,681 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@696f0212
+2022-01-10 16:30:07,681 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5733f295
+2022-01-10 16:30:07,682 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c3146bc
+2022-01-10 16:30:07,683 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@56c698e3
+2022-01-10 16:30:07,684 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@47a86fbb
+2022-01-10 16:30:07,685 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@f478a81
+2022-01-10 16:30:07,685 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@19553973
+2022-01-10 16:30:07,686 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bb6ab3a
+2022-01-10 16:30:07,687 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7fe7c640
+2022-01-10 16:30:07,687 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4c4748bf
+2022-01-10 16:30:07,688 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7ce97ee5
+2022-01-10 16:30:07,688 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@32c8e539
+2022-01-10 16:30:07,689 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@73dce0e6
+2022-01-10 16:30:07,710 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numHeapArenas: 32
+2022-01-10 16:30:07,710 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numDirectArenas: 32
+2022-01-10 16:30:07,711 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.pageSize: 8192
+2022-01-10 16:30:07,711 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxOrder: 11
+2022-01-10 16:30:07,711 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.chunkSize: 16777216
+2022-01-10 16:30:07,711 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.smallCacheSize: 256
+2022-01-10 16:30:07,711 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.normalCacheSize: 64
+2022-01-10 16:30:07,711 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-01-10 16:30:07,711 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-01-10 16:30:07,711 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-01-10 16:30:07,711 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.useCacheForAllThreads: true
+2022-01-10 16:30:07,711 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-01-10 16:30:07,723 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.allocator.type: pooled
+2022-01-10 16:30:07,723 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.threadLocalDirectBufferSize: 0
+2022-01-10 16:30:07,723 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-01-10 16:30:08,506 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.processId: 19864 (auto-detected)
+2022-01-10 16:30:08,508 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv4Stack: false
+2022-01-10 16:30:08,508 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv6Addresses: false
+2022-01-10 16:30:08,578 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] %1 Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-01-10 16:30:08,579 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-01-10 16:30:08,652 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.machineId: 2c:f0:5d:ff:fe:5e:6a:fe (auto-detected)
+2022-01-10 16:30:08,691 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkAccessible: true
+2022-01-10 16:30:08,691 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkBounds: true
+2022-01-10 16:30:08,692 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@9add633
+2022-01-10 16:30:08,718 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-01-10 16:30:08,718 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-01-10 16:30:08,718 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.linkCapacity: 16
+2022-01-10 16:30:08,718 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.ratio: 8
+2022-01-10 16:30:08,718 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-01-10 16:30:09,303 DEBUG compression.Brotli [AsyncHttpClient-1-2] %1 brotli4j not in the classpath; Brotli support will be unavailable.
+2022-01-10 16:30:09,424 DEBUG internal.ThreadLocalRandom [main] %1 -Dio.netty.initialSeedUniquifier: 0x46877d0777311a77
+2022-01-12 16:03:05,612 DEBUG logging.InternalLoggerFactory [main] %1 Using Log4J2 as the default logging framework
+2022-01-12 16:03:05,638 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.level: simple
+2022-01-12 16:03:05,638 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.targetRecords: 4
+2022-01-12 16:03:05,645 DEBUG util.ResourceLeakDetectorFactory [main] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@229c6181
+2022-01-12 16:03:05,682 DEBUG internal.PlatformDependent0 [main] %1 -Dio.netty.noUnsafe: false
+2022-01-12 16:03:05,682 DEBUG internal.PlatformDependent0 [main] %1 Java version: 8
+2022-01-12 16:03:05,684 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.theUnsafe: available
+2022-01-12 16:03:05,685 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.copyMemory: available
+2022-01-12 16:03:05,686 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Buffer.address: available
+2022-01-12 16:03:05,686 DEBUG internal.PlatformDependent0 [main] %1 direct buffer constructor: available
+2022-01-12 16:03:05,687 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Bits.unaligned: available, true
+2022-01-12 16:03:05,687 DEBUG internal.PlatformDependent0 [main] %1 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-01-12 16:03:05,687 DEBUG internal.PlatformDependent0 [main] %1 java.nio.DirectByteBuffer.<init>(long, int): available
+2022-01-12 16:03:05,687 DEBUG internal.PlatformDependent [main] %1 sun.misc.Unsafe: available
+2022-01-12 16:03:05,688 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.tmpdir: C:\Users\Neort\AppData\Local\Temp (java.io.tmpdir)
+2022-01-12 16:03:05,688 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-01-12 16:03:05,688 DEBUG internal.PlatformDependent [main] %1 Platform: Windows
+2022-01-12 16:03:05,689 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.maxDirectMemory: 3806855168 bytes
+2022-01-12 16:03:05,689 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-01-12 16:03:05,690 DEBUG internal.CleanerJava6 [main] %1 java.nio.ByteBuffer.cleaner(): available
+2022-01-12 16:03:05,690 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.noPreferDirect: false
+2022-01-12 16:03:05,700 DEBUG internal.PlatformDependent [main] %1 org.jctools-core.MpscChunkedArrayQueue: available
+2022-01-12 16:03:05,732 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-01-12 16:03:05,732 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-01-12 16:03:06,035 DEBUG ssl.JdkSslContext [main] %1 Default protocols (JDK): [TLSv1.2] 
+2022-01-12 16:03:06,035 DEBUG ssl.JdkSslContext [main] %1 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-01-12 16:03:06,075 DEBUG channel.MultithreadEventLoopGroup [main] %1 -Dio.netty.eventLoopThreads: 32
+2022-01-12 16:03:06,088 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.noKeySetOptimization: false
+2022-01-12 16:03:06,088 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-01-12 16:03:06,129 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@48b67364
+2022-01-12 16:03:06,130 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42e25b0b
+2022-01-12 16:03:06,131 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@39b43d60
+2022-01-12 16:03:06,131 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44be0077
+2022-01-12 16:03:06,132 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2205a05d
+2022-01-12 16:03:06,132 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ef8d15
+2022-01-12 16:03:06,133 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6aa8e115
+2022-01-12 16:03:06,135 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e21e98f
+2022-01-12 16:03:06,138 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@51a9ad5e
+2022-01-12 16:03:06,139 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5f20155b
+2022-01-12 16:03:06,140 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ade7e3
+2022-01-12 16:03:06,141 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@239105a8
+2022-01-12 16:03:06,141 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fce8fd9
+2022-01-12 16:03:06,142 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@609bcfb6
+2022-01-12 16:03:06,143 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7d94beb9
+2022-01-12 16:03:06,143 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@560348e6
+2022-01-12 16:03:06,144 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1df8b5b8
+2022-01-12 16:03:06,144 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@23202fce
+2022-01-12 16:03:06,145 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b993c65
+2022-01-12 16:03:06,145 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@37911f88
+2022-01-12 16:03:06,146 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f1c29b7
+2022-01-12 16:03:06,146 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4d6025c5
+2022-01-12 16:03:06,147 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f284218
+2022-01-12 16:03:06,147 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@407a7f2a
+2022-01-12 16:03:06,148 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ea5b703
+2022-01-12 16:03:06,148 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2a7ed1f
+2022-01-12 16:03:06,149 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fa247d1
+2022-01-12 16:03:06,149 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2cb2fc20
+2022-01-12 16:03:06,150 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4f4c4b1a
+2022-01-12 16:03:06,150 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@723e88f9
+2022-01-12 16:03:06,151 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5f0fd5a0
+2022-01-12 16:03:06,151 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@64e7619d
+2022-01-12 16:03:06,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numHeapArenas: 32
+2022-01-12 16:03:06,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numDirectArenas: 32
+2022-01-12 16:03:06,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.pageSize: 8192
+2022-01-12 16:03:06,184 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxOrder: 11
+2022-01-12 16:03:06,184 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.chunkSize: 16777216
+2022-01-12 16:03:06,184 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.smallCacheSize: 256
+2022-01-12 16:03:06,184 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.normalCacheSize: 64
+2022-01-12 16:03:06,184 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-01-12 16:03:06,184 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-01-12 16:03:06,184 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-01-12 16:03:06,184 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.useCacheForAllThreads: true
+2022-01-12 16:03:06,184 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-01-12 16:03:06,198 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.allocator.type: pooled
+2022-01-12 16:03:06,198 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.threadLocalDirectBufferSize: 0
+2022-01-12 16:03:06,198 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-01-12 16:03:07,630 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.processId: 13320 (auto-detected)
+2022-01-12 16:03:07,632 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv4Stack: false
+2022-01-12 16:03:07,632 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv6Addresses: false
+2022-01-12 16:03:07,720 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] %1 Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-01-12 16:03:07,721 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-01-12 16:03:07,806 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.machineId: 2c:f0:5d:ff:fe:5e:6a:fe (auto-detected)
+2022-01-12 16:03:07,863 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkAccessible: true
+2022-01-12 16:03:07,863 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkBounds: true
+2022-01-12 16:03:07,863 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@254cf6bd
+2022-01-12 16:03:07,890 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-01-12 16:03:07,891 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-01-12 16:03:07,891 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.linkCapacity: 16
+2022-01-12 16:03:07,891 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.ratio: 8
+2022-01-12 16:03:07,891 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-01-12 16:03:10,742 DEBUG compression.Brotli [AsyncHttpClient-1-2] %1 brotli4j not in the classpath; Brotli support will be unavailable.
+2022-01-12 16:03:10,931 DEBUG internal.ThreadLocalRandom [main] %1 -Dio.netty.initialSeedUniquifier: 0x84c4210cc659fd13
+2022-01-12 16:03:17,368 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] %1 Encoding WebSocket Frame opCode=8 length=26
+2022-01-12 16:03:55,396 DEBUG logging.InternalLoggerFactory [main] %1 Using Log4J2 as the default logging framework
+2022-01-12 16:03:55,411 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.level: simple
+2022-01-12 16:03:55,411 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.targetRecords: 4
+2022-01-12 16:03:55,416 DEBUG util.ResourceLeakDetectorFactory [main] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4d154ccd
+2022-01-12 16:03:55,437 DEBUG internal.PlatformDependent0 [main] %1 -Dio.netty.noUnsafe: false
+2022-01-12 16:03:55,438 DEBUG internal.PlatformDependent0 [main] %1 Java version: 8
+2022-01-12 16:03:55,440 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.theUnsafe: available
+2022-01-12 16:03:55,442 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.copyMemory: available
+2022-01-12 16:03:55,442 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Buffer.address: available
+2022-01-12 16:03:55,443 DEBUG internal.PlatformDependent0 [main] %1 direct buffer constructor: available
+2022-01-12 16:03:55,444 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Bits.unaligned: available, true
+2022-01-12 16:03:55,444 DEBUG internal.PlatformDependent0 [main] %1 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-01-12 16:03:55,444 DEBUG internal.PlatformDependent0 [main] %1 java.nio.DirectByteBuffer.<init>(long, int): available
+2022-01-12 16:03:55,444 DEBUG internal.PlatformDependent [main] %1 sun.misc.Unsafe: available
+2022-01-12 16:03:55,445 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.tmpdir: C:\Users\Neort\AppData\Local\Temp (java.io.tmpdir)
+2022-01-12 16:03:55,445 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-01-12 16:03:55,445 DEBUG internal.PlatformDependent [main] %1 Platform: Windows
+2022-01-12 16:03:55,446 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.maxDirectMemory: 3806855168 bytes
+2022-01-12 16:03:55,446 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-01-12 16:03:55,447 DEBUG internal.CleanerJava6 [main] %1 java.nio.ByteBuffer.cleaner(): available
+2022-01-12 16:03:55,447 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.noPreferDirect: false
+2022-01-12 16:03:55,455 DEBUG internal.PlatformDependent [main] %1 org.jctools-core.MpscChunkedArrayQueue: available
+2022-01-12 16:03:55,475 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-01-12 16:03:55,475 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-01-12 16:03:55,623 DEBUG ssl.JdkSslContext [main] %1 Default protocols (JDK): [TLSv1.2] 
+2022-01-12 16:03:55,623 DEBUG ssl.JdkSslContext [main] %1 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-01-12 16:03:55,659 DEBUG channel.MultithreadEventLoopGroup [main] %1 -Dio.netty.eventLoopThreads: 32
+2022-01-12 16:03:55,668 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.noKeySetOptimization: false
+2022-01-12 16:03:55,668 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-01-12 16:03:55,708 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2663e964
+2022-01-12 16:03:55,710 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bf3a5d8
+2022-01-12 16:03:55,711 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42e25b0b
+2022-01-12 16:03:55,712 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@39b43d60
+2022-01-12 16:03:55,713 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44be0077
+2022-01-12 16:03:55,713 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2205a05d
+2022-01-12 16:03:55,713 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ef8d15
+2022-01-12 16:03:55,714 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6aa8e115
+2022-01-12 16:03:55,734 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e21e98f
+2022-01-12 16:03:55,734 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@51a9ad5e
+2022-01-12 16:03:55,735 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5f20155b
+2022-01-12 16:03:55,735 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ade7e3
+2022-01-12 16:03:55,736 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@239105a8
+2022-01-12 16:03:55,737 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fce8fd9
+2022-01-12 16:03:55,737 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@609bcfb6
+2022-01-12 16:03:55,738 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7d94beb9
+2022-01-12 16:03:55,738 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@560348e6
+2022-01-12 16:03:55,739 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1df8b5b8
+2022-01-12 16:03:55,740 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@23202fce
+2022-01-12 16:03:55,740 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b993c65
+2022-01-12 16:03:55,742 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@37911f88
+2022-01-12 16:03:55,742 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f1c29b7
+2022-01-12 16:03:55,743 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4d6025c5
+2022-01-12 16:03:55,744 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f284218
+2022-01-12 16:03:55,744 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@407a7f2a
+2022-01-12 16:03:55,745 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ea5b703
+2022-01-12 16:03:55,746 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2a7ed1f
+2022-01-12 16:03:55,746 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fa247d1
+2022-01-12 16:03:55,747 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2cb2fc20
+2022-01-12 16:03:55,747 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4f4c4b1a
+2022-01-12 16:03:55,748 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@723e88f9
+2022-01-12 16:03:55,748 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5f0fd5a0
+2022-01-12 16:03:55,772 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numHeapArenas: 32
+2022-01-12 16:03:55,773 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numDirectArenas: 32
+2022-01-12 16:03:55,773 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.pageSize: 8192
+2022-01-12 16:03:55,774 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxOrder: 11
+2022-01-12 16:03:55,774 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.chunkSize: 16777216
+2022-01-12 16:03:55,774 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.smallCacheSize: 256
+2022-01-12 16:03:55,774 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.normalCacheSize: 64
+2022-01-12 16:03:55,774 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-01-12 16:03:55,774 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-01-12 16:03:55,774 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-01-12 16:03:55,774 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.useCacheForAllThreads: true
+2022-01-12 16:03:55,774 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-01-12 16:03:55,787 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.allocator.type: pooled
+2022-01-12 16:03:55,788 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.threadLocalDirectBufferSize: 0
+2022-01-12 16:03:55,788 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-01-12 16:03:56,619 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.processId: 9392 (auto-detected)
+2022-01-12 16:03:56,622 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv4Stack: false
+2022-01-12 16:03:56,622 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv6Addresses: false
+2022-01-12 16:03:56,710 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] %1 Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-01-12 16:03:56,711 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-01-12 16:03:56,802 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.machineId: 2c:f0:5d:ff:fe:5e:6a:fe (auto-detected)
+2022-01-12 16:03:56,855 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkAccessible: true
+2022-01-12 16:03:56,856 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkBounds: true
+2022-01-12 16:03:56,856 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@30e3a03f
+2022-01-12 16:03:56,882 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-01-12 16:03:56,882 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-01-12 16:03:56,882 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.linkCapacity: 16
+2022-01-12 16:03:56,882 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.ratio: 8
+2022-01-12 16:03:56,882 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-01-12 16:03:57,530 DEBUG compression.Brotli [AsyncHttpClient-1-2] %1 brotli4j not in the classpath; Brotli support will be unavailable.
+2022-01-12 16:03:57,681 DEBUG internal.ThreadLocalRandom [main] %1 -Dio.netty.initialSeedUniquifier: 0x2057d64c72312edd
+2022-01-12 16:11:37,274 DEBUG logging.InternalLoggerFactory [main] %1 Using Log4J2 as the default logging framework
+2022-01-12 16:11:37,282 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.level: simple
+2022-01-12 16:11:37,282 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.targetRecords: 4
+2022-01-12 16:11:37,287 DEBUG util.ResourceLeakDetectorFactory [main] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5677323c
+2022-01-12 16:11:37,307 DEBUG internal.PlatformDependent0 [main] %1 -Dio.netty.noUnsafe: false
+2022-01-12 16:11:37,307 DEBUG internal.PlatformDependent0 [main] %1 Java version: 8
+2022-01-12 16:11:37,308 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.theUnsafe: available
+2022-01-12 16:11:37,309 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.copyMemory: available
+2022-01-12 16:11:37,309 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Buffer.address: available
+2022-01-12 16:11:37,310 DEBUG internal.PlatformDependent0 [main] %1 direct buffer constructor: available
+2022-01-12 16:11:37,310 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Bits.unaligned: available, true
+2022-01-12 16:11:37,311 DEBUG internal.PlatformDependent0 [main] %1 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-01-12 16:11:37,311 DEBUG internal.PlatformDependent0 [main] %1 java.nio.DirectByteBuffer.<init>(long, int): available
+2022-01-12 16:11:37,311 DEBUG internal.PlatformDependent [main] %1 sun.misc.Unsafe: available
+2022-01-12 16:11:37,311 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.tmpdir: C:\Users\Neort\AppData\Local\Temp (java.io.tmpdir)
+2022-01-12 16:11:37,311 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-01-12 16:11:37,312 DEBUG internal.PlatformDependent [main] %1 Platform: Windows
+2022-01-12 16:11:37,313 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.maxDirectMemory: 3806855168 bytes
+2022-01-12 16:11:37,313 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-01-12 16:11:37,314 DEBUG internal.CleanerJava6 [main] %1 java.nio.ByteBuffer.cleaner(): available
+2022-01-12 16:11:37,314 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.noPreferDirect: false
+2022-01-12 16:11:37,324 DEBUG internal.PlatformDependent [main] %1 org.jctools-core.MpscChunkedArrayQueue: available
+2022-01-12 16:11:37,342 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-01-12 16:11:37,342 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-01-12 16:11:37,467 DEBUG ssl.JdkSslContext [main] %1 Default protocols (JDK): [TLSv1.2] 
+2022-01-12 16:11:37,467 DEBUG ssl.JdkSslContext [main] %1 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-01-12 16:11:37,501 DEBUG channel.MultithreadEventLoopGroup [main] %1 -Dio.netty.eventLoopThreads: 32
+2022-01-12 16:11:37,510 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.noKeySetOptimization: false
+2022-01-12 16:11:37,510 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-01-12 16:11:37,521 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6950ed69
+2022-01-12 16:11:37,522 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2663e964
+2022-01-12 16:11:37,523 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@48b67364
+2022-01-12 16:11:37,524 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@189cbd7c
+2022-01-12 16:11:37,525 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bf3a5d8
+2022-01-12 16:11:37,525 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42e25b0b
+2022-01-12 16:11:37,526 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@39b43d60
+2022-01-12 16:11:37,526 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44be0077
+2022-01-12 16:11:37,527 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2205a05d
+2022-01-12 16:11:37,527 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ef8d15
+2022-01-12 16:11:37,528 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6aa8e115
+2022-01-12 16:11:37,529 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e21e98f
+2022-01-12 16:11:37,529 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@51a9ad5e
+2022-01-12 16:11:37,530 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5f20155b
+2022-01-12 16:11:37,530 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ade7e3
+2022-01-12 16:11:37,531 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@239105a8
+2022-01-12 16:11:37,531 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fce8fd9
+2022-01-12 16:11:37,532 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@609bcfb6
+2022-01-12 16:11:37,533 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7d94beb9
+2022-01-12 16:11:37,533 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@560348e6
+2022-01-12 16:11:37,534 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1df8b5b8
+2022-01-12 16:11:37,534 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@23202fce
+2022-01-12 16:11:37,535 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b993c65
+2022-01-12 16:11:37,535 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@37911f88
+2022-01-12 16:11:37,536 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f1c29b7
+2022-01-12 16:11:37,537 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4d6025c5
+2022-01-12 16:11:37,537 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f284218
+2022-01-12 16:11:37,538 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@407a7f2a
+2022-01-12 16:11:37,538 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ea5b703
+2022-01-12 16:11:37,539 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2a7ed1f
+2022-01-12 16:11:37,539 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fa247d1
+2022-01-12 16:11:37,540 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2cb2fc20
+2022-01-12 16:11:37,592 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numHeapArenas: 32
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numDirectArenas: 32
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.pageSize: 8192
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxOrder: 11
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.chunkSize: 16777216
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.smallCacheSize: 256
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.normalCacheSize: 64
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.useCacheForAllThreads: true
+2022-01-12 16:11:37,593 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-01-12 16:11:37,605 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.allocator.type: pooled
+2022-01-12 16:11:37,605 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.threadLocalDirectBufferSize: 0
+2022-01-12 16:11:37,605 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-01-12 16:11:38,408 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.processId: 4104 (auto-detected)
+2022-01-12 16:11:38,410 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv4Stack: false
+2022-01-12 16:11:38,410 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv6Addresses: false
+2022-01-12 16:11:38,486 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] %1 Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-01-12 16:11:38,487 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-01-12 16:11:38,560 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.machineId: 2c:f0:5d:ff:fe:5e:6a:fe (auto-detected)
+2022-01-12 16:11:38,604 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkAccessible: true
+2022-01-12 16:11:38,605 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkBounds: true
+2022-01-12 16:11:38,605 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@400de50
+2022-01-12 16:11:38,624 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-01-12 16:11:38,624 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-01-12 16:11:38,624 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.linkCapacity: 16
+2022-01-12 16:11:38,624 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.ratio: 8
+2022-01-12 16:11:38,624 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-01-12 16:11:39,202 DEBUG compression.Brotli [AsyncHttpClient-1-2] %1 brotli4j not in the classpath; Brotli support will be unavailable.
+2022-01-12 16:11:39,318 DEBUG internal.ThreadLocalRandom [main] %1 -Dio.netty.initialSeedUniquifier: 0x0442daf4b1d16e4b
+2022-01-12 16:37:03,872 DEBUG logging.InternalLoggerFactory [main] %1 Using Log4J2 as the default logging framework
+2022-01-12 16:37:03,880 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.level: simple
+2022-01-12 16:37:03,881 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.targetRecords: 4
+2022-01-12 16:37:03,885 DEBUG util.ResourceLeakDetectorFactory [main] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7b36aa0c
+2022-01-12 16:37:03,906 DEBUG internal.PlatformDependent0 [main] %1 -Dio.netty.noUnsafe: false
+2022-01-12 16:37:03,906 DEBUG internal.PlatformDependent0 [main] %1 Java version: 8
+2022-01-12 16:37:03,907 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.theUnsafe: available
+2022-01-12 16:37:03,908 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.copyMemory: available
+2022-01-12 16:37:03,908 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Buffer.address: available
+2022-01-12 16:37:03,909 DEBUG internal.PlatformDependent0 [main] %1 direct buffer constructor: available
+2022-01-12 16:37:03,909 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Bits.unaligned: available, true
+2022-01-12 16:37:03,910 DEBUG internal.PlatformDependent0 [main] %1 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-01-12 16:37:03,910 DEBUG internal.PlatformDependent0 [main] %1 java.nio.DirectByteBuffer.<init>(long, int): available
+2022-01-12 16:37:03,910 DEBUG internal.PlatformDependent [main] %1 sun.misc.Unsafe: available
+2022-01-12 16:37:03,910 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.tmpdir: C:\Users\Neort\AppData\Local\Temp (java.io.tmpdir)
+2022-01-12 16:37:03,910 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-01-12 16:37:03,911 DEBUG internal.PlatformDependent [main] %1 Platform: Windows
+2022-01-12 16:37:03,912 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.maxDirectMemory: 3806855168 bytes
+2022-01-12 16:37:03,912 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-01-12 16:37:03,913 DEBUG internal.CleanerJava6 [main] %1 java.nio.ByteBuffer.cleaner(): available
+2022-01-12 16:37:03,913 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.noPreferDirect: false
+2022-01-12 16:37:03,920 DEBUG internal.PlatformDependent [main] %1 org.jctools-core.MpscChunkedArrayQueue: available
+2022-01-12 16:37:03,938 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-01-12 16:37:03,938 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-01-12 16:37:04,063 DEBUG ssl.JdkSslContext [main] %1 Default protocols (JDK): [TLSv1.2] 
+2022-01-12 16:37:04,063 DEBUG ssl.JdkSslContext [main] %1 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-01-12 16:37:04,097 DEBUG channel.MultithreadEventLoopGroup [main] %1 -Dio.netty.eventLoopThreads: 32
+2022-01-12 16:37:04,107 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.noKeySetOptimization: false
+2022-01-12 16:37:04,108 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-01-12 16:37:04,117 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3336e6b6
+2022-01-12 16:37:04,119 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6950ed69
+2022-01-12 16:37:04,119 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6dd7b5a3
+2022-01-12 16:37:04,120 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f3187b0
+2022-01-12 16:37:04,120 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2663e964
+2022-01-12 16:37:04,121 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@48b67364
+2022-01-12 16:37:04,122 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@189cbd7c
+2022-01-12 16:37:04,122 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bf3a5d8
+2022-01-12 16:37:04,123 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42e25b0b
+2022-01-12 16:37:04,123 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@39b43d60
+2022-01-12 16:37:04,124 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44be0077
+2022-01-12 16:37:04,124 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2205a05d
+2022-01-12 16:37:04,125 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ef8d15
+2022-01-12 16:37:04,125 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6aa8e115
+2022-01-12 16:37:04,126 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e21e98f
+2022-01-12 16:37:04,126 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@51a9ad5e
+2022-01-12 16:37:04,127 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5f20155b
+2022-01-12 16:37:04,127 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ade7e3
+2022-01-12 16:37:04,128 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@239105a8
+2022-01-12 16:37:04,128 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fce8fd9
+2022-01-12 16:37:04,129 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@609bcfb6
+2022-01-12 16:37:04,129 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7d94beb9
+2022-01-12 16:37:04,130 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@560348e6
+2022-01-12 16:37:04,131 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1df8b5b8
+2022-01-12 16:37:04,131 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@23202fce
+2022-01-12 16:37:04,132 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b993c65
+2022-01-12 16:37:04,132 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@37911f88
+2022-01-12 16:37:04,133 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f1c29b7
+2022-01-12 16:37:04,133 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4d6025c5
+2022-01-12 16:37:04,134 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f284218
+2022-01-12 16:37:04,135 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@407a7f2a
+2022-01-12 16:37:04,135 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ea5b703
+2022-01-12 16:37:04,182 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numHeapArenas: 32
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numDirectArenas: 32
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.pageSize: 8192
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxOrder: 11
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.chunkSize: 16777216
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.smallCacheSize: 256
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.normalCacheSize: 64
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.useCacheForAllThreads: true
+2022-01-12 16:37:04,183 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-01-12 16:37:04,195 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.allocator.type: pooled
+2022-01-12 16:37:04,195 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.threadLocalDirectBufferSize: 0
+2022-01-12 16:37:04,195 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-01-12 16:37:04,972 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.processId: 16532 (auto-detected)
+2022-01-12 16:37:04,974 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv4Stack: false
+2022-01-12 16:37:04,974 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv6Addresses: false
+2022-01-12 16:37:05,052 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] %1 Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-01-12 16:37:05,053 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-01-12 16:37:05,129 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.machineId: 2c:f0:5d:ff:fe:5e:6a:fe (auto-detected)
+2022-01-12 16:37:05,171 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkAccessible: true
+2022-01-12 16:37:05,172 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkBounds: true
+2022-01-12 16:37:05,172 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@32e8b76
+2022-01-12 16:37:05,192 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-01-12 16:37:05,192 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-01-12 16:37:05,192 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.linkCapacity: 16
+2022-01-12 16:37:05,192 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.ratio: 8
+2022-01-12 16:37:05,192 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-01-12 16:37:05,756 DEBUG compression.Brotli [AsyncHttpClient-1-2] %1 brotli4j not in the classpath; Brotli support will be unavailable.
+2022-01-12 16:37:05,875 DEBUG internal.ThreadLocalRandom [main] %1 -Dio.netty.initialSeedUniquifier: 0xdab35280f5e3a39a
+2022-01-12 16:38:19,470 DEBUG logging.InternalLoggerFactory [main] %1 Using Log4J2 as the default logging framework
+2022-01-12 16:38:19,479 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.level: simple
+2022-01-12 16:38:19,479 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.targetRecords: 4
+2022-01-12 16:38:19,484 DEBUG util.ResourceLeakDetectorFactory [main] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@537f60bf
+2022-01-12 16:38:19,511 DEBUG internal.PlatformDependent0 [main] %1 -Dio.netty.noUnsafe: false
+2022-01-12 16:38:19,511 DEBUG internal.PlatformDependent0 [main] %1 Java version: 8
+2022-01-12 16:38:19,512 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.theUnsafe: available
+2022-01-12 16:38:19,512 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.copyMemory: available
+2022-01-12 16:38:19,513 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Buffer.address: available
+2022-01-12 16:38:19,513 DEBUG internal.PlatformDependent0 [main] %1 direct buffer constructor: available
+2022-01-12 16:38:19,514 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Bits.unaligned: available, true
+2022-01-12 16:38:19,514 DEBUG internal.PlatformDependent0 [main] %1 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-01-12 16:38:19,514 DEBUG internal.PlatformDependent0 [main] %1 java.nio.DirectByteBuffer.<init>(long, int): available
+2022-01-12 16:38:19,514 DEBUG internal.PlatformDependent [main] %1 sun.misc.Unsafe: available
+2022-01-12 16:38:19,515 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.tmpdir: C:\Users\Neort\AppData\Local\Temp (java.io.tmpdir)
+2022-01-12 16:38:19,515 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-01-12 16:38:19,515 DEBUG internal.PlatformDependent [main] %1 Platform: Windows
+2022-01-12 16:38:19,516 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.maxDirectMemory: 3806855168 bytes
+2022-01-12 16:38:19,516 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-01-12 16:38:19,517 DEBUG internal.CleanerJava6 [main] %1 java.nio.ByteBuffer.cleaner(): available
+2022-01-12 16:38:19,517 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.noPreferDirect: false
+2022-01-12 16:38:19,525 DEBUG internal.PlatformDependent [main] %1 org.jctools-core.MpscChunkedArrayQueue: available
+2022-01-12 16:38:19,544 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-01-12 16:38:19,545 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-01-12 16:38:19,676 DEBUG ssl.JdkSslContext [main] %1 Default protocols (JDK): [TLSv1.2] 
+2022-01-12 16:38:19,676 DEBUG ssl.JdkSslContext [main] %1 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-01-12 16:38:19,710 DEBUG channel.MultithreadEventLoopGroup [main] %1 -Dio.netty.eventLoopThreads: 32
+2022-01-12 16:38:19,718 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.noKeySetOptimization: false
+2022-01-12 16:38:19,719 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-01-12 16:38:19,729 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@205d38da
+2022-01-12 16:38:19,730 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f3187b0
+2022-01-12 16:38:19,730 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2663e964
+2022-01-12 16:38:19,731 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@48b67364
+2022-01-12 16:38:19,732 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@189cbd7c
+2022-01-12 16:38:19,732 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bf3a5d8
+2022-01-12 16:38:19,733 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42e25b0b
+2022-01-12 16:38:19,733 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@39b43d60
+2022-01-12 16:38:19,734 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44be0077
+2022-01-12 16:38:19,734 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2205a05d
+2022-01-12 16:38:19,735 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ef8d15
+2022-01-12 16:38:19,735 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6aa8e115
+2022-01-12 16:38:19,736 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e21e98f
+2022-01-12 16:38:19,736 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@51a9ad5e
+2022-01-12 16:38:19,737 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5f20155b
+2022-01-12 16:38:19,752 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ade7e3
+2022-01-12 16:38:19,753 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@239105a8
+2022-01-12 16:38:19,754 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fce8fd9
+2022-01-12 16:38:19,755 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@609bcfb6
+2022-01-12 16:38:19,755 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7d94beb9
+2022-01-12 16:38:19,756 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@560348e6
+2022-01-12 16:38:19,757 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1df8b5b8
+2022-01-12 16:38:19,757 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@23202fce
+2022-01-12 16:38:19,786 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b993c65
+2022-01-12 16:38:19,787 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@37911f88
+2022-01-12 16:38:19,787 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f1c29b7
+2022-01-12 16:38:19,788 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4d6025c5
+2022-01-12 16:38:19,788 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f284218
+2022-01-12 16:38:19,789 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@407a7f2a
+2022-01-12 16:38:19,789 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ea5b703
+2022-01-12 16:38:19,790 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2a7ed1f
+2022-01-12 16:38:19,791 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fa247d1
+2022-01-12 16:38:19,828 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numHeapArenas: 32
+2022-01-12 16:38:19,828 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numDirectArenas: 32
+2022-01-12 16:38:19,828 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.pageSize: 8192
+2022-01-12 16:38:19,829 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxOrder: 11
+2022-01-12 16:38:19,829 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.chunkSize: 16777216
+2022-01-12 16:38:19,829 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.smallCacheSize: 256
+2022-01-12 16:38:19,829 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.normalCacheSize: 64
+2022-01-12 16:38:19,829 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-01-12 16:38:19,829 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-01-12 16:38:19,829 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-01-12 16:38:19,829 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.useCacheForAllThreads: true
+2022-01-12 16:38:19,829 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-01-12 16:38:19,845 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.allocator.type: pooled
+2022-01-12 16:38:19,845 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.threadLocalDirectBufferSize: 0
+2022-01-12 16:38:19,845 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-01-12 16:38:20,693 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.processId: 14196 (auto-detected)
+2022-01-12 16:38:20,696 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv4Stack: false
+2022-01-12 16:38:20,696 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv6Addresses: false
+2022-01-12 16:38:20,789 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] %1 Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-01-12 16:38:20,790 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-01-12 16:38:20,874 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.machineId: 2c:f0:5d:ff:fe:5e:6a:fe (auto-detected)
+2022-01-12 16:38:20,940 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkAccessible: true
+2022-01-12 16:38:20,941 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkBounds: true
+2022-01-12 16:38:20,941 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3167375e
+2022-01-12 16:38:20,975 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-01-12 16:38:20,976 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-01-12 16:38:20,976 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.linkCapacity: 16
+2022-01-12 16:38:20,976 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.ratio: 8
+2022-01-12 16:38:20,976 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-01-12 16:38:21,553 DEBUG compression.Brotli [AsyncHttpClient-1-2] %1 brotli4j not in the classpath; Brotli support will be unavailable.
+2022-01-12 16:38:21,679 DEBUG internal.ThreadLocalRandom [main] %1 -Dio.netty.initialSeedUniquifier: 0x71448557328dcf83
+2022-01-12 16:40:15,392 DEBUG logging.InternalLoggerFactory [main] %1 Using Log4J2 as the default logging framework
+2022-01-12 16:40:15,401 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.level: simple
+2022-01-12 16:40:15,401 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.targetRecords: 4
+2022-01-12 16:40:15,407 DEBUG util.ResourceLeakDetectorFactory [main] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@537f60bf
+2022-01-12 16:40:15,428 DEBUG internal.PlatformDependent0 [main] %1 -Dio.netty.noUnsafe: false
+2022-01-12 16:40:15,428 DEBUG internal.PlatformDependent0 [main] %1 Java version: 8
+2022-01-12 16:40:15,429 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.theUnsafe: available
+2022-01-12 16:40:15,430 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.copyMemory: available
+2022-01-12 16:40:15,430 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Buffer.address: available
+2022-01-12 16:40:15,431 DEBUG internal.PlatformDependent0 [main] %1 direct buffer constructor: available
+2022-01-12 16:40:15,432 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Bits.unaligned: available, true
+2022-01-12 16:40:15,432 DEBUG internal.PlatformDependent0 [main] %1 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-01-12 16:40:15,432 DEBUG internal.PlatformDependent0 [main] %1 java.nio.DirectByteBuffer.<init>(long, int): available
+2022-01-12 16:40:15,432 DEBUG internal.PlatformDependent [main] %1 sun.misc.Unsafe: available
+2022-01-12 16:40:15,433 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.tmpdir: C:\Users\Neort\AppData\Local\Temp (java.io.tmpdir)
+2022-01-12 16:40:15,433 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-01-12 16:40:15,434 DEBUG internal.PlatformDependent [main] %1 Platform: Windows
+2022-01-12 16:40:15,435 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.maxDirectMemory: 3806855168 bytes
+2022-01-12 16:40:15,435 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-01-12 16:40:15,436 DEBUG internal.CleanerJava6 [main] %1 java.nio.ByteBuffer.cleaner(): available
+2022-01-12 16:40:15,436 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.noPreferDirect: false
+2022-01-12 16:40:15,444 DEBUG internal.PlatformDependent [main] %1 org.jctools-core.MpscChunkedArrayQueue: available
+2022-01-12 16:40:15,462 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-01-12 16:40:15,463 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-01-12 16:40:15,613 DEBUG ssl.JdkSslContext [main] %1 Default protocols (JDK): [TLSv1.2] 
+2022-01-12 16:40:15,613 DEBUG ssl.JdkSslContext [main] %1 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-01-12 16:40:15,647 DEBUG channel.MultithreadEventLoopGroup [main] %1 -Dio.netty.eventLoopThreads: 32
+2022-01-12 16:40:15,657 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.noKeySetOptimization: false
+2022-01-12 16:40:15,658 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-01-12 16:40:15,668 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@205d38da
+2022-01-12 16:40:15,670 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f3187b0
+2022-01-12 16:40:15,670 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2663e964
+2022-01-12 16:40:15,671 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@48b67364
+2022-01-12 16:40:15,671 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@189cbd7c
+2022-01-12 16:40:15,672 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bf3a5d8
+2022-01-12 16:40:15,672 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42e25b0b
+2022-01-12 16:40:15,673 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@39b43d60
+2022-01-12 16:40:15,673 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44be0077
+2022-01-12 16:40:15,674 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2205a05d
+2022-01-12 16:40:15,675 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ef8d15
+2022-01-12 16:40:15,675 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6aa8e115
+2022-01-12 16:40:15,676 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e21e98f
+2022-01-12 16:40:15,676 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@51a9ad5e
+2022-01-12 16:40:15,677 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5f20155b
+2022-01-12 16:40:15,677 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ade7e3
+2022-01-12 16:40:15,678 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@239105a8
+2022-01-12 16:40:15,678 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fce8fd9
+2022-01-12 16:40:15,679 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@609bcfb6
+2022-01-12 16:40:15,679 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7d94beb9
+2022-01-12 16:40:15,680 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@560348e6
+2022-01-12 16:40:15,681 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1df8b5b8
+2022-01-12 16:40:15,707 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@23202fce
+2022-01-12 16:40:15,708 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b993c65
+2022-01-12 16:40:15,708 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@37911f88
+2022-01-12 16:40:15,709 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f1c29b7
+2022-01-12 16:40:15,709 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4d6025c5
+2022-01-12 16:40:15,710 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f284218
+2022-01-12 16:40:15,710 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@407a7f2a
+2022-01-12 16:40:15,711 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ea5b703
+2022-01-12 16:40:15,711 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2a7ed1f
+2022-01-12 16:40:15,712 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fa247d1
+2022-01-12 16:40:15,735 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numHeapArenas: 32
+2022-01-12 16:40:15,735 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numDirectArenas: 32
+2022-01-12 16:40:15,735 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.pageSize: 8192
+2022-01-12 16:40:15,735 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxOrder: 11
+2022-01-12 16:40:15,735 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.chunkSize: 16777216
+2022-01-12 16:40:15,735 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.smallCacheSize: 256
+2022-01-12 16:40:15,735 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.normalCacheSize: 64
+2022-01-12 16:40:15,735 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-01-12 16:40:15,735 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-01-12 16:40:15,736 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-01-12 16:40:15,736 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.useCacheForAllThreads: true
+2022-01-12 16:40:15,736 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-01-12 16:40:15,747 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.allocator.type: pooled
+2022-01-12 16:40:15,747 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.threadLocalDirectBufferSize: 0
+2022-01-12 16:40:15,747 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-01-12 16:40:16,536 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.processId: 7216 (auto-detected)
+2022-01-12 16:40:16,538 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv4Stack: false
+2022-01-12 16:40:16,538 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv6Addresses: false
+2022-01-12 16:40:16,621 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] %1 Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-01-12 16:40:16,622 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-01-12 16:40:16,702 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.machineId: 2c:f0:5d:ff:fe:5e:6a:fe (auto-detected)
+2022-01-12 16:40:16,748 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkAccessible: true
+2022-01-12 16:40:16,749 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkBounds: true
+2022-01-12 16:40:16,749 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7ecc421b
+2022-01-12 16:40:16,773 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-01-12 16:40:16,773 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-01-12 16:40:16,773 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.linkCapacity: 16
+2022-01-12 16:40:16,773 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.ratio: 8
+2022-01-12 16:40:16,773 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-01-12 16:40:17,402 DEBUG compression.Brotli [AsyncHttpClient-1-2] %1 brotli4j not in the classpath; Brotli support will be unavailable.
+2022-01-12 16:40:17,530 DEBUG internal.ThreadLocalRandom [main] %1 -Dio.netty.initialSeedUniquifier: 0xf14168dea43586a4
+2022-01-12 16:41:38,133 DEBUG logging.InternalLoggerFactory [main] %1 Using Log4J2 as the default logging framework
+2022-01-12 16:41:38,142 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.level: simple
+2022-01-12 16:41:38,143 DEBUG util.ResourceLeakDetector [main] %1 -Dio.netty.leakDetection.targetRecords: 4
+2022-01-12 16:41:38,150 DEBUG util.ResourceLeakDetectorFactory [main] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5824a83d
+2022-01-12 16:41:38,174 DEBUG internal.PlatformDependent0 [main] %1 -Dio.netty.noUnsafe: false
+2022-01-12 16:41:38,175 DEBUG internal.PlatformDependent0 [main] %1 Java version: 8
+2022-01-12 16:41:38,176 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.theUnsafe: available
+2022-01-12 16:41:38,177 DEBUG internal.PlatformDependent0 [main] %1 sun.misc.Unsafe.copyMemory: available
+2022-01-12 16:41:38,178 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Buffer.address: available
+2022-01-12 16:41:38,178 DEBUG internal.PlatformDependent0 [main] %1 direct buffer constructor: available
+2022-01-12 16:41:38,179 DEBUG internal.PlatformDependent0 [main] %1 java.nio.Bits.unaligned: available, true
+2022-01-12 16:41:38,179 DEBUG internal.PlatformDependent0 [main] %1 jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2022-01-12 16:41:38,179 DEBUG internal.PlatformDependent0 [main] %1 java.nio.DirectByteBuffer.<init>(long, int): available
+2022-01-12 16:41:38,179 DEBUG internal.PlatformDependent [main] %1 sun.misc.Unsafe: available
+2022-01-12 16:41:38,180 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.tmpdir: C:\Users\Neort\AppData\Local\Temp (java.io.tmpdir)
+2022-01-12 16:41:38,180 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-01-12 16:41:38,180 DEBUG internal.PlatformDependent [main] %1 Platform: Windows
+2022-01-12 16:41:38,181 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.maxDirectMemory: 3806855168 bytes
+2022-01-12 16:41:38,181 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-01-12 16:41:38,183 DEBUG internal.CleanerJava6 [main] %1 java.nio.ByteBuffer.cleaner(): available
+2022-01-12 16:41:38,183 DEBUG internal.PlatformDependent [main] %1 -Dio.netty.noPreferDirect: false
+2022-01-12 16:41:38,192 DEBUG internal.PlatformDependent [main] %1 org.jctools-core.MpscChunkedArrayQueue: available
+2022-01-12 16:41:38,214 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-01-12 16:41:38,215 DEBUG internal.InternalThreadLocalMap [main] %1 -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-01-12 16:41:38,389 DEBUG ssl.JdkSslContext [main] %1 Default protocols (JDK): [TLSv1.2] 
+2022-01-12 16:41:38,390 DEBUG ssl.JdkSslContext [main] %1 Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-01-12 16:41:38,431 DEBUG channel.MultithreadEventLoopGroup [main] %1 -Dio.netty.eventLoopThreads: 32
+2022-01-12 16:41:38,441 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.noKeySetOptimization: false
+2022-01-12 16:41:38,442 DEBUG nio.NioEventLoop [main] %1 -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-01-12 16:41:38,455 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7c3fdb62
+2022-01-12 16:41:38,457 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6dd7b5a3
+2022-01-12 16:41:38,458 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f3187b0
+2022-01-12 16:41:38,459 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2663e964
+2022-01-12 16:41:38,460 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@48b67364
+2022-01-12 16:41:38,461 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@189cbd7c
+2022-01-12 16:41:38,462 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7bf3a5d8
+2022-01-12 16:41:38,463 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@42e25b0b
+2022-01-12 16:41:38,464 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@39b43d60
+2022-01-12 16:41:38,465 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@44be0077
+2022-01-12 16:41:38,465 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2205a05d
+2022-01-12 16:41:38,466 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ef8d15
+2022-01-12 16:41:38,499 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6aa8e115
+2022-01-12 16:41:38,499 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5e21e98f
+2022-01-12 16:41:38,500 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@51a9ad5e
+2022-01-12 16:41:38,500 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5f20155b
+2022-01-12 16:41:38,501 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@72ade7e3
+2022-01-12 16:41:38,502 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@239105a8
+2022-01-12 16:41:38,502 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3fce8fd9
+2022-01-12 16:41:38,503 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@609bcfb6
+2022-01-12 16:41:38,503 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7d94beb9
+2022-01-12 16:41:38,504 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@560348e6
+2022-01-12 16:41:38,504 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1df8b5b8
+2022-01-12 16:41:38,505 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@23202fce
+2022-01-12 16:41:38,506 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7b993c65
+2022-01-12 16:41:38,506 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@37911f88
+2022-01-12 16:41:38,507 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f1c29b7
+2022-01-12 16:41:38,507 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4d6025c5
+2022-01-12 16:41:38,508 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7f284218
+2022-01-12 16:41:38,509 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@407a7f2a
+2022-01-12 16:41:38,509 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ea5b703
+2022-01-12 16:41:38,510 TRACE nio.NioEventLoop [main] %1 instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2a7ed1f
+2022-01-12 16:41:38,534 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numHeapArenas: 32
+2022-01-12 16:41:38,534 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.numDirectArenas: 32
+2022-01-12 16:41:38,535 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.pageSize: 8192
+2022-01-12 16:41:38,535 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxOrder: 11
+2022-01-12 16:41:38,535 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.chunkSize: 16777216
+2022-01-12 16:41:38,535 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.smallCacheSize: 256
+2022-01-12 16:41:38,535 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.normalCacheSize: 64
+2022-01-12 16:41:38,535 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-01-12 16:41:38,535 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-01-12 16:41:38,535 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-01-12 16:41:38,535 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.useCacheForAllThreads: true
+2022-01-12 16:41:38,535 DEBUG buffer.PooledByteBufAllocator [main] %1 -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-01-12 16:41:38,551 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.allocator.type: pooled
+2022-01-12 16:41:38,551 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.threadLocalDirectBufferSize: 0
+2022-01-12 16:41:38,551 DEBUG buffer.ByteBufUtil [main] %1 -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-01-12 16:41:39,554 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.processId: 22328 (auto-detected)
+2022-01-12 16:41:39,557 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv4Stack: false
+2022-01-12 16:41:39,557 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 -Djava.net.preferIPv6Addresses: false
+2022-01-12 16:41:39,652 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] %1 Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-01-12 16:41:39,655 DEBUG util.NetUtil [Forwarding newSession on session null to remote] %1 Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-01-12 16:41:39,755 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] %1 -Dio.netty.machineId: 2c:f0:5d:ff:fe:5e:6a:fe (auto-detected)
+2022-01-12 16:41:39,856 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkAccessible: true
+2022-01-12 16:41:39,858 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] %1 -Dio.netty.buffer.checkBounds: true
+2022-01-12 16:41:39,858 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] %1 Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@560b56f5
+2022-01-12 16:41:39,901 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-01-12 16:41:39,902 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-01-12 16:41:39,902 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.linkCapacity: 16
+2022-01-12 16:41:39,902 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.ratio: 8
+2022-01-12 16:41:39,902 DEBUG util.Recycler [AsyncHttpClient-1-2] %1 -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-01-12 16:41:40,683 DEBUG compression.Brotli [AsyncHttpClient-1-2] %1 brotli4j not in the classpath; Brotli support will be unavailable.
+2022-01-12 16:41:40,886 DEBUG internal.ThreadLocalRandom [main] %1 -Dio.netty.initialSeedUniquifier: 0xfc3036304fd99c01
