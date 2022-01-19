@@ -118,24 +118,6 @@ public class GoogleCloudPricingPage extends AbstractPage {
                 break;
         }
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(dataCenter));
-        dataCenter.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(dataCenterFrankfurt));
-        switch (pricingList.getDataCenter()){
-            case "Frankfurt":
-                dataCenterFrankfurt.click();
-                break;
-            case "London":
-                dataCenterLondon.click();
-                break;
-            case "Taiwan":
-                dataCenterTaiwan.click();
-                break;
-            default:
-                dataCenterFrankfurt.click();
-                break;
-        }
-
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(machineType));
         machineType.click();
         switch (pricingList.getMachineType()){
@@ -190,7 +172,6 @@ public class GoogleCloudPricingPage extends AbstractPage {
                     break;
             }
 
-
             gpuNumber.click();
             new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(gpuNumber1));
             switch (pricingList.getGpuNumber()){
@@ -208,8 +189,6 @@ public class GoogleCloudPricingPage extends AbstractPage {
                     break;
             }
 
-
-
             localSSD.click();
             new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(localSSD_1x375));
 
@@ -224,13 +203,29 @@ public class GoogleCloudPricingPage extends AbstractPage {
                     localSSD_3x375.click();
                     break;
                 default:
-                   localSSD_1x375.click();
+                    localSSD_1x375.click();
                     break;
             }
         }
 
-
-
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(dataCenter));
+        dataCenter.click();
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(dataCenterFrankfurt));
+        switch (pricingList.getDataCenter()){
+            case "Frankfurt":
+                dataCenterFrankfurt.click();
+                break;
+            case "London":
+                dataCenterLondon.click();
+                break;
+            case "Taiwan":
+                dataCenterTaiwan.click();
+                break;
+            default:
+                dataCenterFrankfurt.click();
+                break;
+        }
+        
         committedUsage.click();
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(comittedUsage_None));
         switch (pricingList.getCommittedUsage()){
