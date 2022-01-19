@@ -19,6 +19,7 @@ public class CommonConditions {
     }
 
     @AfterMethod
-    public void stopBrowser(){DriverSingleton.closeDriver();}
+    public void stopBrowser(){
+        DriverSingleton.closeDriver();}
 
 }

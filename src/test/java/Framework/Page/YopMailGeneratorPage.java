@@ -8,14 +8,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class YOPmailGeneratorPage {
+public class YopMailGeneratorPage {
     private WebDriver driver;
     @FindBy (css = "#egen")
     WebElement generatedCode;
     @FindBy (xpath = "/html/body/div/div[2]/main/div/div[2]/div/div/div[2]/button[2]") WebElement checkMailButton;
+    By inbox = By.xpath("//*[@id=\"ifinbox\"]");
 
-
-    public YOPmailGeneratorPage(WebDriver driver) {
+    public YopMailGeneratorPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -24,10 +24,10 @@ public class YOPmailGeneratorPage {
         return generatedCode.getText();
     }
 
-    public YOPmailMainPage checkMail(){
+    public YopMailMainPage checkMail(){
         checkMailButton.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"ifinbox\"]")));
-        return new YOPmailMainPage(driver);
+        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(inbox));
+        return new YopMailMainPage(driver);
     }
 
 }

@@ -5,103 +5,167 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.lang.invoke.SwitchPoint;
+import java.util.List;
 
-public class GoogleCloudPricingPage {
-    private WebDriver driver;
-    @FindBy(xpath = "//*[@id=\"input_75\"]")
+public class GoogleCloudPricingPage extends AbstractPage {
+    @FindBy(xpath = "//input[@name='quantity']")
     WebElement instances;
-    @FindBy(xpath = "//*[@id=\"select_102\"]") WebElement machineType;
-    @FindBy(css = "#select_100") WebElement series;
-    @FindBy(xpath = "//*[@id=\"mainForm\"]/div[2]/div/md-card/md-card-content/div/div[1]/form/div[11]/div[1]/md-input-container/md-checkbox") WebElement gpuCheckbox;
-    @FindBy(css = "#select_451") WebElement gpuType;
-    @FindBy(css = "#select_453") WebElement gpuNumber;
-    @FindBy(css = "#select_413") WebElement localSSD;
-    @FindBy(css = "#select_108") WebElement dataCenter;
-    @FindBy(css = "#select_115") WebElement committedUsage;
-    @FindBy(xpath = "//*[@id=\"mainForm\"]/div[2]/div/md-card/md-card-content/div/div[1]/form/div[18]/button") WebElement estimate;
-    @FindBy(css = "#email_quote") WebElement emailEstimate;
-    @FindBy(css = "#input_528") WebElement estimateEmailInput;
-    @FindBy(xpath = "//*[@id=\"dialogContent_534\"]/form/md-dialog-actions/button[2]") WebElement sendMailButton;
-    @FindBy(xpath = "//*[@id=\"compute\"]/md-list/md-list-item[5]/div[2]") WebElement binding1;
-    @FindBy(xpath = "//*[@id=\"compute\"]/md-list/md-list-item[7]/div[2]") WebElement binding2;
-
+    @FindBy(xpath = "//md-input-container[contains(., 'Machine type')]/md-select")
+    WebElement machineType;
+    @FindBy(xpath = "//md-input-container[contains(., 'Series')]/md-select")
+    WebElement series;
+    @FindBy(xpath = "//md-checkbox[contains(., 'Add GPUs')]")
+    WebElement gpuCheckbox;
+    @FindBy(xpath = "//md-input-container[contains(., 'GPU type')]/md-select")
+    WebElement gpuType;
+    @FindBy(xpath = "//md-input-container[contains(., 'Number of GPUs')]/md-select")
+    WebElement gpuNumber;
+    @FindBy(xpath = "//md-input-container[contains(., 'Local SSD')]/md-select")
+    WebElement localSSD;
+    @FindBy(xpath = "//md-input-container[contains(., 'Datacenter location')]/md-select")
+    WebElement dataCenter;
+    @FindBy(xpath = "//md-input-container[contains(., 'Committed usage')]/md-select")
+    WebElement committedUsage;
+    @FindBy(xpath = "//button[contains(., 'Add to Estimate')][1]")
+    WebElement estimate;
+    @FindBy(css = "#email_quote")
+    WebElement emailEstimate;
+    @FindBy(xpath = "//md-input-container[contains(., 'Email')]/input")
+    WebElement estimateEmailInput;
+    @FindBy(xpath = "//button[contains(., 'Send Email')]")
+    WebElement sendMailButton;
+    @FindBy(xpath = "//*[@id=\"cloud-site\"]/devsite-iframe/iframe")
+    WebElement frame1;
+    @FindBy(xpath = "//*[@id=\"myFrame\"]")
+    WebElement frame2;
+    @FindBy(xpath = "//md-option[contains(., 'N1')]")
+    WebElement seriesN1;
+    @FindBy(xpath = "//md-option[contains(., 'N2')]")
+    WebElement seriesN2;
+    @FindBy(xpath = "//md-option[contains(., 'E2')]")
+    WebElement seriesE2;
+    @FindBy(xpath = "(//md-option[contains(., 'London')])[3]")
+    WebElement dataCenterLondon;
+    @FindBy(xpath = "(//md-option[contains(., 'Frankfurt (europe-west3)')])[3]")
+    WebElement dataCenterFrankfurt;
+    @FindBy(xpath = "(//md-option[contains(., 'Taiwan')])[3]")
+    WebElement dataCenterTaiwan;
+    @FindBy(xpath = "//md-option[contains(., 'n1-standard-8')]")
+    WebElement machineTypeN1_8;
+    @FindBy(xpath = "//md-option[contains(., 'n1-standard-4')]")
+    WebElement machineTypeN1_4;
+    @FindBy(xpath = "//md-option[contains(., 'n2-standard-8 (vCPU')]")
+    WebElement machineTypeN2_8;
+    @FindBy(xpath = "//md-option[contains(., 'n2-standard-4')]")
+    WebElement machineTypeN2_4;
+    @FindBy(xpath = "//md-option[contains(., 'e2-standard-8')]")
+    WebElement machineTypeE2_8;
+    @FindBy(xpath = "//md-option[contains(., 'e2-standard-4')]")
+    WebElement machineTypeE2_4;
+    @FindBy(xpath = "//md-option[contains(., 'NVIDIA Tesla V100')]")
+    WebElement gpuTypeV100;
+    @FindBy(xpath = "//md-option[contains(., 'NVIDIA Tesla P4')]")
+    WebElement gpuTypeP4;
+    @FindBy(xpath = "//md-option[contains(., 'NVIDIA Tesla T4')]")
+    WebElement gpuTypeT4;
+    @FindBy(xpath = "(//md-option[@value=1][@ng-value='item.value'])[2]")
+    WebElement gpuNumber1;
+    @FindBy(xpath = "(//md-option[@value=2][@ng-value='item.value'])[2]")
+    WebElement gpuNumber2;
+    @FindBy(xpath = "(//md-option[@value=4][@ng-value='item.value'])[2]")
+    WebElement gpuNumber4;
+    @FindBy(xpath = "//md-option[contains(., '1x375')]")
+    WebElement localSSD_1x375;
+    @FindBy(xpath = "//md-option[contains(., '2x375')]")
+    WebElement localSSD_2x375;
+    @FindBy(xpath = "//md-option[contains(., '3x375')]")
+    WebElement localSSD_3x375;
+    @FindBy(xpath = "(//md-option[contains(., 'None')])[2]")
+    WebElement comittedUsage_None;
+    @FindBy(xpath = "(//md-option[contains(., '1 Year')])[2]")
+    WebElement comittedUsage_1year;
+    @FindBy(xpath = "(//md-option[contains(., '3 Years')])[2]")
+    WebElement comittedUsage_3years;
 
 
     public GoogleCloudPricingPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
     public GoogleCloudPricingPage fillPricingPage(PricingList pricingList){
-        driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\"cloud-site\"]/devsite-iframe/iframe")));
-        driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\"myFrame\"]")));
+        switchFrames();
+
         instances.sendKeys(pricingList.getInstances().toString());
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(series));
         series.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#select_option_215")));
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(seriesN1));
         switch (pricingList.getSeries()){
             case "N1":
-                driver.findElement(By.cssSelector("#select_option_215")).click();
+                seriesN1.click();
                 break;
             case "N2":
-                driver.findElement(By.cssSelector("#select_option_216")).click();
+                seriesN2.click();
                 break;
             case "E2":
-                driver.findElement(By.cssSelector("#select_option_217")).click();
+                seriesE2.click();
                 break;
             default:
-                driver.findElement(By.cssSelector("#select_option_215")).click();
+                seriesN2.click();
                 break;
         }
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(dataCenter));
         dataCenter.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#select_option_236")));
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(dataCenterFrankfurt));
         switch (pricingList.getDataCenter()){
             case "Frankfurt":
-                driver.findElement(By.cssSelector("#select_option_236")).click();
+                dataCenterFrankfurt.click();
                 break;
             case "London":
-                driver.findElement(By.cssSelector("#select_option_235")).click();
+                dataCenterLondon.click();
                 break;
             case "Taiwan":
-                driver.findElement(By.cssSelector("#select_option_238")).click();
+                dataCenterTaiwan.click();
                 break;
             default:
-                driver.findElement(By.cssSelector("#select_option_236")).click();
+                dataCenterFrankfurt.click();
                 break;
         }
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(machineType));
         machineType.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#select_option_418")));
         switch (pricingList.getMachineType()){
             case "n1-standard-8":
-                driver.findElement(By.cssSelector("#select_option_418")).click();
+                new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(machineTypeN1_8));
+                machineTypeN1_8.click();
                 break;
             case "n1-standard-4":
-                driver.findElement(By.cssSelector("#select_option_728")).click();
+                new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(machineTypeN1_4));
+                machineTypeN1_4.click();
                 break;
             case "n2-standard-8":
-                driver.findElement(By.cssSelector("#select_option_762")).click();
+                new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(machineTypeN2_8));
+                machineTypeN2_8.click();
                 break;
             case "n2-standard-4":
-                driver.findElement(By.cssSelector("#select_option_761")).click();
+                new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(machineTypeN2_4));
+                machineTypeN2_4.click();
                 break;
             case "e2-standard-8":
-                driver.findElement(By.cssSelector("#select_option_812")).click();
+                new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(machineTypeE2_8));
+                machineTypeE2_8.click();
                 break;
             case "e2-standard-4":
-                driver.findElement(By.cssSelector("#select_option_811")).click();
+                new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(machineTypeE2_4));
+                machineTypeE2_4.click();
                 break;
             default:
-                driver.findElement(By.cssSelector("#select_option_418")).click();
+                new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(machineTypeN2_8));
+                machineTypeN2_8.click();
                 break;
         }
 
@@ -110,39 +174,57 @@ public class GoogleCloudPricingPage {
             gpuCheckbox.click();
             new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(gpuType));
             gpuType.click();
-            new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#select_option_458")));
+            new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(gpuTypeV100));
             switch (pricingList.getGpuType()){
                 case "NVIDIA Tesla V100":
-                    driver.findElement(By.cssSelector("#select_option_458")).click();
-                    setGpuNumberOnGpuType("NVIDIA Tesla V100", pricingList.getGpuNumber());
+                    gpuTypeV100.click();
                     break;
                 case "NVIDIA Tesla P4":
-                    driver.findElement(By.cssSelector("#select_option_457")).click();
+                    gpuTypeP4.click();
                     break;
                 case "NVIDIA Tesla T4":
-                    driver.findElement(By.cssSelector("#select_option_459")).click();
+                    gpuTypeT4.click();
                     break;
                 default:
-                    driver.findElement(By.cssSelector("#select_option_458")).click();
+                    gpuTypeV100.click();
                     break;
             }
 
 
+            gpuNumber.click();
+            new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(gpuNumber1));
+            switch (pricingList.getGpuNumber()){
+                case "1":
+                    gpuNumber1.click();
+                    break;
+                case "2":
+                    gpuNumber2.click();
+                    break;
+                case "4":
+                    gpuNumber4.click();
+                    break;
+                default:
+                    gpuNumber1.click();
+                    break;
+            }
+
+
+
             localSSD.click();
-            new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#select_option_439")));
+            new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(localSSD_1x375));
 
             switch (pricingList.getLocalSSD()){
                 case "1x375 GB":
-                    driver.findElement(By.cssSelector("#select_option_438")).click();
+                    localSSD_1x375.click();
                     break;
                 case "2x375 GB":
-                    driver.findElement(By.cssSelector("#select_option_439")).click();
+                    localSSD_2x375.click();
                     break;
                 case "3x375 GB":
-                    driver.findElement(By.cssSelector("#select_option_440")).click();
+                    localSSD_3x375.click();
                     break;
                 default:
-                    driver.findElement(By.cssSelector("#select_option_439")).click();
+                   localSSD_1x375.click();
                     break;
             }
         }
@@ -150,19 +232,19 @@ public class GoogleCloudPricingPage {
 
 
         committedUsage.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#select_option_112")));
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(comittedUsage_None));
         switch (pricingList.getCommittedUsage()){
             case "0":
-                driver.findElement(By.cssSelector("#select_option_112")).click();
+                comittedUsage_None.click();
                 break;
             case "1":
-                driver.findElement(By.cssSelector("#select_option_113")).click();
+                comittedUsage_1year.click();
                 break;
             case "3":
-                driver.findElement(By.cssSelector("#select_option_114")).click();
+                comittedUsage_3years.click();
                 break;
             default:
-                driver.findElement(By.cssSelector("#select_option_113")).click();
+                comittedUsage_1year.click();
                 break;
         }
 
@@ -172,19 +254,20 @@ public class GoogleCloudPricingPage {
 
 
     public GoogleCloudPricingPage moveToFrameTwo(){
-        driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\"cloud-site\"]/devsite-iframe/iframe")));
-        driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\"myFrame\"]")));
+        driver.switchTo().frame(frame1);
+        driver.switchTo().frame(frame2);
         return this;
     }
 
-    public GoogleCloudPricingPage AddToEstimate(){
+    public GoogleCloudPricingPage addToEstimate(){
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(estimate));
         estimate.click();
         return this;
     }
-    public GoogleCloudPricingPage EmailEstimate(){
+    public GoogleCloudPricingPage emailEstimate(){
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(emailEstimate));
         emailEstimate.click();
+        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#input_529")));
         return this;
     }
 
@@ -199,82 +282,17 @@ public class GoogleCloudPricingPage {
     }
 
     public Double makeCalculation(){
-        Double price1 = Double.parseDouble(binding1.getText().replaceFirst("USD ", ""));
-        Double price2 = Double.parseDouble(binding2.getText().replaceFirst("USD ", ""));
-        return price1+price2;
+        Double sum = 0.0;
+        List<WebElement> webElementList = driver.findElements(By.xpath("//div[@class='ng-binding'][contains(., 'USD')]"));
+        for (WebElement price:webElementList) {
+        sum = sum + Double.parseDouble(price.getText().replaceFirst("USD ", ""));
+        }
+        return sum;
     }
 
-    private void setGpuNumberOnGpuType (String GpuType, String number){
-
-        gpuNumber.click();
-        switch (GpuType){
-            case "NVIDIA Tesla T4":
-                new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#select_option_485")));
-                switch (number){
-                    case "0":
-                        driver.findElement(By.cssSelector("#select_option_485")).click();
-                        break;
-                    case "1":
-                        driver.findElement(By.cssSelector("#select_option_486")).click();
-                        break;
-                    case "2":
-                        driver.findElement(By.cssSelector("#select_option_487")).click();
-                        break;
-                    case "4":
-                        driver.findElement(By.cssSelector("#select_option_488")).click();
-                        break;
-                    default:
-                        driver.findElement(By.cssSelector("#select_option_486")).click();
-                        break;
-                }
-                break;
-            case "NVIDIA Tesla P4":
-                new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#select_option_495")));
-                switch (number){
-                    case "0":
-                        driver.findElement(By.cssSelector("#select_option_494")).click();
-                        break;
-                    case "1":
-                        driver.findElement(By.cssSelector("#select_option_495")).click();
-                        break;
-                    case "2":
-                        driver.findElement(By.cssSelector("#select_option_496")).click();
-                        break;
-                    case "4":
-                        driver.findElement(By.cssSelector("#select_option_497")).click();
-                        break;
-                    default:
-                        driver.findElement(By.cssSelector("#select_option_495")).click();
-                        break;
-                }
-                break;
-            case "NVIDIA Tesla V100":
-                new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#select_option_462")));
-                switch (number){
-                    case "0":
-                        driver.findElement(By.cssSelector("#select_option_461")).click();
-                        break;
-                    case "1":
-                        driver.findElement(By.cssSelector("#select_option_462")).click();
-                        break;
-                    case "2":
-                        driver.findElement(By.cssSelector("#select_option_463")).click();
-                        break;
-                    case "4":
-                        driver.findElement(By.cssSelector("#select_option_464")).click();
-                        break;
-                    case "8":
-                        driver.findElement(By.cssSelector("#select_option_465")).click();
-                        break;
-                    default:
-                        driver.findElement(By.cssSelector("#select_option_462")).click();
-                        break;
-                }
-                break;
-
-        }
-
-
+    private void switchFrames(){
+        driver.switchTo().frame(frame1);
+        driver.switchTo().frame(frame2);
     }
 }
 

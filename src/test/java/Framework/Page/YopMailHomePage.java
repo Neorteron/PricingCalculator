@@ -1,26 +1,21 @@
 package Framework.Page;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 
-public class YOPmailHomePage extends AbstractPage {
+public class YopMailHomePage extends AbstractPage {
     @FindBy(xpath = "//*[@id=\"listeliens\"]/a[1]")
     WebElement generator;
 
-    public YOPmailHomePage(WebDriver driver) {
+    public YopMailHomePage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
     }
 
-    public YOPmailHomePage openPage(){
+    public YopMailHomePage openPage(){
         ((JavascriptExecutor)driver).executeScript("window.open()");
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(tabs.size()-1));
@@ -28,9 +23,9 @@ public class YOPmailHomePage extends AbstractPage {
         return this;
     }
 
-    public YOPmailGeneratorPage OpenGenerator(){
+    public YopMailGeneratorPage openGenerator(){
         generator.click();
-        return new YOPmailGeneratorPage(driver);
+        return new YopMailGeneratorPage(driver);
     }
 
 }

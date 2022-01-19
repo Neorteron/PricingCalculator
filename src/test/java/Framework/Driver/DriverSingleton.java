@@ -1,7 +1,6 @@
 package Framework.Driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,7 +14,6 @@ public class DriverSingleton {
 
     public static WebDriver getDriver(){
         if (null == driver){
-            //System.setProperty("browser", "default");
             switch (System.getProperty("browser")){
                 case "firefox": {
                     WebDriverManager.firefoxdriver().setup();
@@ -28,7 +26,7 @@ public class DriverSingleton {
                     driver = new ChromeDriver(chromeOptions);
                 }
             }
-            driver.manage().window().setSize(new Dimension(1920, 1080));
+            driver.manage().window().maximize();
         }
         return driver;
     }

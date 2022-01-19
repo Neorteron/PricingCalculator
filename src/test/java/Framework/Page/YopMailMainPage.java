@@ -4,30 +4,32 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class YOPmailMainPage {
-    private WebDriver driver;
+public class YopMailMainPage extends AbstractPage {
     @FindBy(css = "#refresh")
     WebElement refreshButton;
-    @FindBy(xpath = "//*[@id=\"mail\"]/div/div/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/h3") WebElement priceInMail;
+    @FindBy(xpath = "//h3[contains(., 'USD')]")
+    WebElement priceInMail;
+    @FindBy(xpath = "//*[@id=\"ifmail\"]")
+    WebElement frame;
+    By header = By.xpath("//h1[contains(., 'Your Estimated Bill')]");
 
 
-    public YOPmailMainPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+
+    public YopMailMainPage(WebDriver driver) {
+        super(driver);
     }
 
-    public YOPmailMainPage moveToMailFrame(){
-        driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\"ifmail\"]")));
+    public YopMailMainPage moveToMailFrame(){
+        driver.switchTo().frame(frame);
         return this;
     }
 
 
 
-    public YOPmailMainPage refreshMails(){
+    public YopMailMainPage refreshMails(){
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
@@ -38,7 +40,7 @@ public class YOPmailMainPage {
     }
 
     public double getPriceFromMail(){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"mail\"]/div/div/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/h3")));
+        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(header));
         return Double.parseDouble(priceInMail.getText().replaceFirst("USD ", "").replace(",",""));
     }
 

@@ -5,15 +5,9 @@ import Framework.Page.*;
 import Framework.Service.ListCreator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.sql.DriverManager;
 import java.util.ArrayList;
 
 
@@ -23,23 +17,23 @@ public class FillFormAndSendMailTest extends CommonConditions {
 
 
     @Test
-    public void FillFormAndSendMail() {
+    public void fillFormAndSendMail() {
         //Setup pricing
         PricingList defaultList = ListCreator.withCredentialsFromProperty();
         GoogleCloudHomePage googleCloudHomePage = new GoogleCloudHomePage(driver);
 
         GoogleCloudPricingPage pricingPage = googleCloudHomePage.openPage()
-                .InputSearchText("Google Cloud Platform Pricing Calculator")
-                .ClickCalculatorLink()
+                .inputSearchText("Google Cloud Platform Pricing Calculator")
+                .clickCalculatorLink()
                 .fillPricingPage(defaultList)
-                .AddToEstimate()
-                .EmailEstimate();
+                .addToEstimate()
+                .emailEstimate();
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#input_529")));
+
         //Setup Email
-        YOPmailHomePage yopMailHomePage = new YOPmailHomePage(driver);
+        YopMailHomePage yopMailHomePage = new YopMailHomePage(driver);
         String generatedMail = yopMailHomePage.openPage()
-                .OpenGenerator()
+                .openGenerator()
                 .getEmail();
         logger.info("Created mail with name: " + generatedMail);
 
@@ -53,7 +47,7 @@ public class FillFormAndSendMailTest extends CommonConditions {
 
         //Checking incoming mail
         driver.switchTo().window(tabs.get(tabs.size()-1));
-        YOPmailGeneratorPage generatorPage = new YOPmailGeneratorPage(driver);
+        YopMailGeneratorPage generatorPage = new YopMailGeneratorPage(driver);
         Double sumFromMail = generatorPage.checkMail()
                 .refreshMails()
                 .moveToMailFrame()

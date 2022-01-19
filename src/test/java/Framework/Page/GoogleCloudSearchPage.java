@@ -10,8 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GoogleCloudSearchPage {
     private WebDriver driver;
-    @FindBy(xpath = "//*[@id=\"___gcse_0\"]/div/div/div/div[5]/div[2]/div/div/div[1]/div[1]/div[1]/div[1]/div/a")
-    WebElement SearchResult;
+    @FindBy(xpath = "(//a[contains(., 'Google Cloud Pricing Calculator')])[1]")
+    WebElement searchResult;
+    By frame = By.xpath("//*[@id=\"cloud-site\"]/devsite-iframe/iframe");
 
     public GoogleCloudSearchPage(WebDriver driver) {
         this.driver = driver;
@@ -19,10 +20,10 @@ public class GoogleCloudSearchPage {
     }
 
 
-    public GoogleCloudPricingPage ClickCalculatorLink(){
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(SearchResult));
-        SearchResult.click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"cloud-site\"]/devsite-iframe/iframe")));
+    public GoogleCloudPricingPage clickCalculatorLink(){
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(searchResult));
+        searchResult.click();
+        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(frame));
         return new GoogleCloudPricingPage(driver);
     }
 
