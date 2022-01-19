@@ -8,7 +8,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverSingleton {
     private static WebDriver driver;
-    private static final String RESOURCES_PATH = "src/test/java/Framework/Resourses/";
 
     private DriverSingleton(){}
 

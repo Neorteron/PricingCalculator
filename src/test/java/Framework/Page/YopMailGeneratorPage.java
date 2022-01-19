@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class YopMailGeneratorPage {
+public class YopMailGeneratorPage extends AbstractPage {
     private WebDriver driver;
     @FindBy (css = "#egen")
     WebElement generatedCode;
@@ -16,8 +16,7 @@ public class YopMailGeneratorPage {
     By inbox = By.xpath("//*[@id=\"ifinbox\"]");
 
     public YopMailGeneratorPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
     public String getEmail(){

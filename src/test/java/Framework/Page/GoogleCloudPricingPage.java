@@ -225,7 +225,7 @@ public class GoogleCloudPricingPage extends AbstractPage {
                 dataCenterFrankfurt.click();
                 break;
         }
-        
+
         committedUsage.click();
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(comittedUsage_None));
         switch (pricingList.getCommittedUsage()){
