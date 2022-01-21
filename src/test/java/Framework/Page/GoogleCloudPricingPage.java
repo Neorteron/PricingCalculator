@@ -80,13 +80,6 @@ public class GoogleCloudPricingPage extends AbstractPage {
         setDataCenter(pricingList.getDataCenter());
 
 
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", committedUsage);
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
         committedUsage.click();
         setCommittedUsage(pricingList.getCommittedUsage());
 
