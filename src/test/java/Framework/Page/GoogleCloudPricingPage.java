@@ -2,6 +2,7 @@ package Framework.Page;
 
 import Framework.Model.PricingList;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -77,6 +78,14 @@ public class GoogleCloudPricingPage extends AbstractPage {
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(dataCenter));
         dataCenter.click();
         setDataCenter(pricingList.getDataCenter());
+
+
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", committedUsage);
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         committedUsage.click();
         setCommittedUsage(pricingList.getCommittedUsage());
